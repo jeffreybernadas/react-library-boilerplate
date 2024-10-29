@@ -14,13 +14,13 @@ jobs:
         run: npm install
 
       - name: Login to GitHub Pages
-        run: echo "//npm.pkg.github.com/:_authToken=${{secrets.GH_TOKEN}}" >> ~/.npmrc
+        run: echo "//npm.pkg.github.com/:_authToken=${{secrets.GITHUB_TOKEN}}" >> ~/.npmrc
 
       - name: Build Storybook
-        run: npm run build-storybook
+        run: npm run build-storybook # Change according to your build command
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GH_TOKEN }}
-          publish_dir: ./storybook-static
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./storybook-static # Change according to your build output
