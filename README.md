@@ -92,3 +92,8 @@ Deployment of Storybook is automated via Github Actions. You can check storybook
 #### Publishing to NPM
 
 Same with Storybook deployment, publishing to NPM is also automated. Just make sure to add NPM_TOKEN in your repositories "Secrets and variables" > "Actions".
+
+NPM Link:
+- https://www.npmjs.com/package/@bernz322/react-library-boilerplate
+Storybook Link:
+- https://bernz322.github.io/react-library-boilerplate/
