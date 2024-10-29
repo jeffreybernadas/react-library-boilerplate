@@ -1,7 +1,7 @@
 {
   "name": "@bernz322/react-library-boilerplate",
   "author": "Jeffrey Bernadas",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A boilerplate to get your very own React Component Library up and running using Rollup, Typescript, Jest, React Testing, Storybook",
   "license": "MIT",
   "main": "build/index.cjs.js",
