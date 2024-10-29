@@ -1,22 +1,22 @@
 import React from "react";
 
-import { Button } from "..";
+import Button from "../Button";
 import "./header.css";
 
 type User = {
   name: string;
 };
 
-interface HeaderProps {
+export interface HeaderProps {
   user?: User;
-  onLogin: () => void;
-  onLogout: () => void;
-  onCreateAccount: () => void;
+  onLogin?: () => void;
+  onLogout?: () => void;
+  onCreateAccount?: () => void;
 }
 
 const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
   <header>
-    <div className="wrapper">
+    <div className="storybook-header">
       <div>
         <svg
           width="32"

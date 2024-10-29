@@ -5,7 +5,7 @@ exports[`<Header /> should equal snapshot 1`] = `
   <div>
     <header>
       <div
-        class="wrapper"
+        class="storybook-header"
       >
         <div>
           <svg

@@ -6,7 +6,7 @@ exports[`<Page /> should equal snapshot 1`] = `
     <article>
       <header>
         <div
-          class="wrapper"
+          class="storybook-header"
         >
           <div>
             <svg
@@ -53,7 +53,9 @@ exports[`<Page /> should equal snapshot 1`] = `
           </div>
         </div>
       </header>
-      <section>
+      <section
+        class="storybook-page"
+      >
         <h2>
           Pages in Storybook
         </h2>

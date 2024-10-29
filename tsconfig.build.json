@@ -2,10 +2,10 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "declaration": true,
-    "declarationDir": "dist/typings",
+    "declarationDir": "build/typings",
     "noEmit": false,
     "emitDeclarationOnly": true
   },
   "include": ["src/**/*"],
-  "exclude": ["*/.test.*", "*/.stories.*"]
+  "exclude": ["*/.tests.*", "*/.stories.*", "./setupTests.ts"]
 }
