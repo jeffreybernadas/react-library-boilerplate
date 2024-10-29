@@ -35,3 +35,12 @@ Then update the `name` field in `package.json` to reflect your NPM package name 
 ```
 npm publish
 ```
+
+- Add README
+- Add Jest
+- Add ESLint & Prettier
+- Add Husky
+- Add Workflows
+- Add issue template
+- Add hooks
+- Add util - clsx

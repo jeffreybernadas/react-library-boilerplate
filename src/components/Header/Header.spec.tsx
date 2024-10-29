@@ -8,7 +8,7 @@ describe("<Header />", () => {
         onCreateAccount={() => {}}
         onLogin={() => {}}
         onLogout={() => {}}
-      />
+      />,
     );
     expect(baseElement).toMatchSnapshot();
   });
