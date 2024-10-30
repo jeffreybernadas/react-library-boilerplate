@@ -19,7 +19,10 @@ export default [
         extensions: [".js", ".ts", ".tsx"],
       }),
       commonjs(),
-      postcss(),
+      postcss({
+        minimize: true,
+        extract: "styles.css",
+      }),
       babel({
         babelHelpers: "runtime",
         skipPreflightCheck: true,
