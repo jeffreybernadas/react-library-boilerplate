@@ -30,7 +30,8 @@ cd my-project-name
 npm install
 ```
 
-_Note: I always update all dependencies whenever I have the time._
+_Note: I will always update all dependencies whenever I have the time._
+
 Then run the storybook in development mode to see components by running:
 
 ```
