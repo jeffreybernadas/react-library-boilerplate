@@ -4,7 +4,8 @@ This is my own and go to boilerplate for creating my own React Component Librari
 
 ## ✨ Key Features
 
-- 🔥 Type checking [TypeScript](https://www.typescriptlang.org/)
+- :rocket: React 19 support
+- 🔥 Type checking with [TypeScript](https://www.typescriptlang.org/)
 - 🎉 [Storybook](https://storybook.js.org/) V8 Integration
 - 👷 Testing with [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/)
 - 📏 Linter with [ESLint](https://eslint.org/)
@@ -24,7 +25,7 @@ This is my own and go to boilerplate for creating my own React Component Librari
 Run the following command on your local environment:
 
 ```
-git clone https://github.com/Bernz322/react-library-boilerplate.git my-project-name
+git clone https://github.com/jeffreybernadas/react-library-boilerplate.git my-project-name
 cd my-project-name
 npm install
 ```
@@ -83,7 +84,39 @@ For building your library, execute:
 npm run build
 ```
 
-This will create a build folder containing index.esm.js, index.cjs.js and typings folder for declarations.
+This will create a build folder containing index.esm.js, index.cjs.js, and typings folders for declarations including styles.css.
+
+#### Example usage
+
+If you are creating a component library, put it in npm registry or do `npm pack` and install it on your other project locally. Import the said component including styles.
+
+```
+import React from "react";
+import { Header, Button, Page } from "@bernz322/react-library-boilerplate";
+import "./index.scss";
+
+const App = () => {
+  return (
+    <div>
+      <Header />
+      <Button label="Click me" />
+      <Page />
+    </div>
+  );
+};
+
+export default App;
+```
+
+Import the style in node modules.
+
+```
+@import '@bernz322/react-library-boilerplate/build/styles.css';
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+```
 
 #### Deployment of storybook
 
@@ -99,4 +132,4 @@ NPM Link:
 
 Storybook Link:
 
-- https://bernz322.github.io/react-library-boilerplate/
+- https://jeffreybernadas.github.io/react-library-boilerplate/
